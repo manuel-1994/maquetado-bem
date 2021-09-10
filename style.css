@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/bg-mobile.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin: 0 10%;
+}
+
+/* info */
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.info__img {
+  width: 100%;
+}
+
+.info__texts {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info__title {
+  margin-bottom: 1rem;
+}
+
+/* btn */
+
+.button {
+  width: 180px;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0 2px 8px black;
+  font-size: 16px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+/* social */
+
+.social {
+  margin-top: 5rem;
+  height: inherit;
+}
+
+.social__links {
+  display: flex;
+  justify-content: center;
+}
+
+.social__thumbnail {
+  color: white;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.social__thumbnail:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.social__thumbnail:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+.social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center;
+    background-size: auto;
+  }
+
+  /* content */
+
+  .content {
+    padding: 3rem 0;
+    margin: 0 8%;
+  }
+
+  /* info */
+
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  .info__img {
+    width: 50%;
+  }
+
+  .info__texts {
+    margin-top: 3rem;
+    width: 45%;
+    align-items: initial;
+    text-align: start;
+  }
+
+  .info__title {
+    font-size: 38px;
+  }
+  /* social container */
+  .social__links {
+    display: flex;
+    justify-content: end;
+  }
+}

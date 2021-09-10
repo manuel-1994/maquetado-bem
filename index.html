@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c97d1bff90.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Maquetado con BEM</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="content">
-        <h1 class="content__title">
-            <i class="content__icon fa-solid fa-comment-dots"></i>
-            <span class="content__text">Hunddle</span>
-        </h1>
+      <h1 class="content__title">
+        <i class="content__icon far fa-comment-dots"></i>
+        <span class="content__text">Huddle</span>
+      </h1>
 
-        <section class="info">
-            <img class="info__img" src="" alt="">
-            <article class="info__text">
-                <h2 class="info__title"></h2>
-                <p class="info__extracto"></p>
-            </article>
-
-            <button class="button"></button>
-        </section>
-
-        <section class="social">
-            <a href="" class="social__thumbnail">
-                <i class="social__icon"></i>
-            </a>
-            <a href="" class="social__thumbnail">
-                <i class="social__icon"></i>
-            </a>
-            <a href="" class="social__thumbnail">
-                <i class="social__icon"></i>
-            </a>
-        </section>
+      <section class="info">
+        <img
+          src="./images/illustration-mockups.svg"
+          alt="img"
+          class="info__img"
+        />
+        <article class="info__texts">
+          <h2 class="info__title">Build The Community Your Fans Will Love</h2>
+          <p class="info__extracto">
+            Hunddle re.imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="button">Register</button>
+        </article>
+      </section>
+      <section class="social">
+        <div class="social__links">
+          <a href="#" class="social__thumbnail">
+            <i class="social__icon fab fa-facebook"></i> </a
+          ><a href="#" class="social__thumbnail">
+            <i class="social__icon fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social__thumbnail">
+            <i class="social__icon fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
